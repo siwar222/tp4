@@ -14,7 +14,8 @@ function App() {
 
 export default App;
 */
-import React from 'react';
+//ex2
+/*import React from 'react';
 import { ThemeProvider } from './ThemeContext';
 import ThemeToggle from './ThemeToggle';
 
@@ -26,4 +27,19 @@ function App() {
   );
 }
 
+export default App;*/
+
+import React from 'react';
+import UserList from './UserList';
+
+function App() {
+  return (
+    <div>
+      <h1>TP - Appel API avec useEffect</h1>
+      <UserList />
+    </div>
+  );
+}
+
 export default App;
+
