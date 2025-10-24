@@ -29,7 +29,8 @@ function App() {
 
 export default App;*/
 
-import React from 'react';
+// ex4
+/*import React from 'react';
 import UserList from './UserList';
 
 function App() {
@@ -41,5 +42,27 @@ function App() {
   );
 }
 
+export default App;*/
+// src/App.jsx
+import React from 'react';
+import { UserProvider } from './context/UserContext';
+import UserProfile from './components/UserProfile';
+import Notifications from './components/Notifications';
+import NotificationCounter from './components/NotificationCounter';
+
+function App() {
+  return (
+    <UserProvider>
+      <div style={{ fontFamily: 'Arial', padding: 20 }}>
+        <h1>Mon Application React - TP Hooks</h1>
+        <UserProfile />
+        <Notifications />
+        <NotificationCounter />
+      </div>
+    </UserProvider>
+  );
+}
+
 export default App;
+
 
